@@ -1,0 +1,12 @@
+# AG Cloud Order Worker
+
+Deploy with Cloudflare Workers.
+
+1. Install Wrangler: `npm i -g wrangler`
+2. Login: `wrangler login`
+3. Set secrets:
+   - `wrangler secret put DISCORD_WEBHOOK_URL`
+   - `wrangler secret put STATUS_WEBHOOK_URL` (optional)
+4. Set `FIREBASE_API_KEY`, `FOUNDER_ROLE_ID`, `ALLOWED_ORIGIN`, and optional `ADMIN_URL` in `wrangler.toml` or Worker variables.
+5. Run `wrangler deploy` from this folder.
+6. Put the returned Worker URL into frontend `.env` as `VITE_ORDER_API_URL`.
