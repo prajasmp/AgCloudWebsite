@@ -1,0 +1,8 @@
+name = "agcloud-orders"
+main = "src/index.js"
+compatibility_date = "2026-07-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://www.agcloud.fun"
+FIREBASE_API_KEY = "replace_me"
+FOUNDER_ROLE_ID = "replace_me"
